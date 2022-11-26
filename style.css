@@ -140,6 +140,7 @@ header ul li a{
     background: #017143;
     clip-path: circle(600px at right 800px);
 }
+ 
 @media (max-width: 991px){
     header{
         padding: 20px;
@@ -160,7 +161,30 @@ header ul li a{
         background-position: center;
         background-repeat: no-repeat;
         filter: invert(1);
+        z-index: 11;
     }
+    .toggle.active{
+        position: fixed;
+        right: 20px;
+        background: url(images/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+   header ul.navigation.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 10;
+   } 
     section{
         padding: 20px 20px 120px;
     }
